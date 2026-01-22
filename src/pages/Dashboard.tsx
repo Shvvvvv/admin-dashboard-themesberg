@@ -80,7 +80,7 @@ const colorBadge = {
 
 const Dashboard = () => {
   return (
-    <div className="text-gray-900">
+    <div className="text-gray-900 p-4">
       <Card className="w-full bg-white min-h-96">
         <CardHeader>
           <CardTitle>Sales</CardTitle>
