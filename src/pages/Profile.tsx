@@ -1,11 +1,8 @@
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
+  CardFooter
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import {

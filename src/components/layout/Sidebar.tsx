@@ -19,7 +19,7 @@ import {
   Cog8ToothIcon,
   GlobeAsiaAustraliaIcon,
 } from "@heroicons/react/24/outline";
-import { Link, NavLink, useLocation } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import { ROUTES } from "@/routes/routes";
 import { cn } from "@/lib/utils";
 
