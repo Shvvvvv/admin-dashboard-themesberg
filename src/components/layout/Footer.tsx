@@ -3,7 +3,7 @@ import { Card, CardContent } from "../ui/card";
 
 const Footer = () => {
   return (
-    <Card className="flex py-8 mt-4 hidden lg:block">
+    <Card className="lg:flex py-8 mt-4 hidden">
       <CardContent>
         <div className="flex justify-between">
           <div className="text-sm text-gray-500">

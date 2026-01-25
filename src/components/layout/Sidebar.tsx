@@ -30,7 +30,15 @@ const Sidebar = () => {
     <aside className="hidden lg:flex w-64 flex-col bg-white border-r border-gray-200 px-3 py-4 h-full overflow-auto">
       <nav className="px-4 border-b border-gray-200">
         <button className="w-full text-left px-2 py-1 mb-5 rounded-lg hover:bg-gray-100">
-          <NavLink to={ROUTES.DASHBOARD.path} className={({isActive}) => cn("flex gap-4 font-medium text-gray-900 text-base", isActive ? "text-blue-600 font-semibold": "")}>
+          <NavLink
+            to={ROUTES.DASHBOARD.path}
+            className={({ isActive }) =>
+              cn(
+                "flex gap-4 font-medium text-gray-900 text-base",
+                isActive ? "text-blue-600 font-semibold" : "",
+              )
+            }
+          >
             <ChartPieIcon className="w-5 h-5" />
             <div>Overview</div>
           </NavLink>
@@ -49,14 +57,34 @@ const Sidebar = () => {
             <AccordionContent>
               <ul className="ml-12 flex flex-col gap-4 pt-4">
                 <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
+                  <NavLink
+                    to={ROUTES.USERS.path}
+                    className={({ isActive }) =>
+                      cn(
+                        "w-full text-left transition-colors",
+                        isActive
+                          ? "text-blue-600 font-semibold"
+                          : "hover:text-blue-600",
+                      )
+                    }
+                  >
                     Users
-                  </button>
+                  </NavLink>
                 </li>
                 <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
+                  <NavLink
+                    to={ROUTES.PROFILE.path}
+                    className={({ isActive }) =>
+                      cn(
+                        "w-full text-left transition-colors",
+                        isActive
+                          ? "text-blue-600 font-semibold"
+                          : "hover:text-blue-600",
+                      )
+                    }
+                  >
                     Profile
-                  </button>
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink
@@ -72,21 +100,6 @@ const Sidebar = () => {
                   >
                     Setting
                   </NavLink>
-                </li>
-                <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
-                    Pricing
-                  </button>
-                </li>
-                <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
-                    Calendar
-                  </button>
-                </li>
-                <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
-                    Kanban
-                  </button>
                 </li>
               </ul>
             </AccordionContent>
@@ -105,25 +118,24 @@ const Sidebar = () => {
                     Product List
                   </button>
                 </li>
-                <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
-                    Billing
-                  </button>
-                </li>
-                <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
-                    Invoice
-                  </button>
-                </li>
+                
               </ul>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         <button className="w-full text-left px-2 py-1 mb-5 rounded-lg hover:bg-gray-100">
-          <div className="flex gap-4">
+          <NavLink
+            to={ROUTES.MESSAGES.path}
+            className={({ isActive }) =>
+              cn(
+                "flex gap-4 font-medium text-gray-900 text-base",
+                isActive ? "text-blue-600 font-semibold" : "",
+              )
+            }
+          >
             <InboxArrowDownIcon className="w-5 h-5" />
-            <div className="font-medium text-gray-900 text-base">Messages</div>
-          </div>
+            Messages
+          </NavLink>
         </button>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="authentication" className="mb-5 border-b-0">
