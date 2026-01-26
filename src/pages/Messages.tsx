@@ -15,7 +15,7 @@ import {
 const Messages = () => {
   return (
     <div className="flex flex-col h-full">
-      <div className="flex justify-between px-6 py-8 bg-white border-b">
+      <div className="flex justify-between p-4 bg-white border-b">
         <div className="flex">
           <div className="pe-4 border-e-2 me-4">
             <Checkbox className="data-[state=checked]:bg-blue-600 h-5 w-5" />
@@ -35,7 +35,7 @@ const Messages = () => {
         </div>
       </div>
       <div className="flex-1 overflow-auto">
-        <div className="grid grid-cols-6 py-4 px-6 border-b-2 bg-gray-100 items-center relative">
+        <div className="grid grid-cols-6 p-4 border-b-2 bg-gray-100 items-center relative">
           <div className="col-span-6 lg:col-span-1 flex gap-2 items-center">
             <Checkbox className="data data-[state=checked]:bg-blue-600 h-5 w-5" />
             <Toggle className="group">
@@ -66,7 +66,7 @@ const Messages = () => {
           </div>
         </div>
       </div>
-      <div className="p-6 bg-white">
+      <div className="p-4 bg-white">
         <div className="hidden lg:flex justify-between">
           <div className="w-64">
             <div className="text-gray-400">3.24 GB of 15 GB</div>

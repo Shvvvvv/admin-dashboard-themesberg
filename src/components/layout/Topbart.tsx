@@ -8,12 +8,17 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "../ui/input-group";
-const Topbar = () => {
+
+interface TopbarProps {
+  onMenuClick: () => void
+}
+
+const Topbar = ({onMenuClick}: TopbarProps) => {
   return (
     <header className="h-16 w-full bg-white border-b border-gray-200 flex items-center justify-between px-6 sticky top-0 z-40">
       <div className="flex items-center gap-4">
         <img src="src/assets/img/logo.svg" alt="logo" />
-        <Bars3BottomLeftIcon className="h-8 w-8 lg:hidden" />
+        <Bars3BottomLeftIcon className="h-8 w-8 lg:hidden cursor-pointer" onClick={onMenuClick} />
         <InputGroup className="hidden md:flex bg-gray-50">
           <InputGroupInput placeholder="Search" />
           <InputGroupAddon>

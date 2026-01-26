@@ -10,6 +10,7 @@ import Messages from "./pages/Messages.tsx";
 import DetailMessages from "./pages/DetailMessages.tsx";
 import Users from "./pages/Users.tsx";
 import Profile from "./pages/Profile.tsx";
+import Products from "./pages/Products.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path={ROUTES.MESSAGES_DETAIL.relative} element={<DetailMessages/>} />
           <Route path={ROUTES.USERS.relative} element={<Users/>} />
           <Route path={ROUTES.PROFILE.relative} element={<Profile/>} />
+          <Route path={ROUTES.PRODUCTS.relative} element={<Products/>} />
         </Route>
       </Routes>
     </BrowserRouter>

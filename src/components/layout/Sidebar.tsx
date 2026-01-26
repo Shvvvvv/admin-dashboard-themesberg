@@ -27,7 +27,7 @@ const Sidebar = () => {
   const location = useLocation();
   console.log(location.pathname);
   return (
-    <aside className="hidden lg:flex w-64 flex-col bg-white border-r border-gray-200 px-3 py-4 h-full overflow-auto">
+    <aside className="flex w-64 flex-col bg-white border-r border-gray-200 px-3 py-4 h-full overflow-auto">
       <nav className="px-4 border-b border-gray-200">
         <button className="w-full text-left px-2 py-1 mb-5 rounded-lg hover:bg-gray-100">
           <NavLink
@@ -114,11 +114,20 @@ const Sidebar = () => {
             <AccordionContent>
               <ul className="ml-12 flex flex-col gap-4 pt-4">
                 <li>
-                  <button className="w-full text-left hover:text-blue-600 transition-colors">
+                  <NavLink
+                    to={ROUTES.PRODUCTS.path}
+                    className={({ isActive }) =>
+                      cn(
+                        "w-full text-left transition-colors",
+                        isActive
+                          ? "text-blue-600 font-semibold"
+                          : "hover:text-blue-600",
+                      )
+                    }
+                  >
                     Product List
-                  </button>
+                  </NavLink>
                 </li>
-                
               </ul>
             </AccordionContent>
           </AccordionItem>

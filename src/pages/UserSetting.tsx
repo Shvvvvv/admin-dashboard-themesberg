@@ -24,7 +24,7 @@ import { Dribbble, Facebook, GithubIcon, Twitter } from "lucide-react";
 const UserSetting = () => {
   return (
     <>
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-6 gap-4 p-4">
         <div className="col-span-6 lg:col-span-2 grid gap-4 order-2 lg:order-1">
           <Card className="py-4 hidden lg:block">
             <CardContent className="px-4">
@@ -411,7 +411,7 @@ const UserSetting = () => {
           </Card>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 pt-0">
         <Card className="py-4 col-span-1">
           <CardHeader>
             <CardTitle>Alert & Notifications</CardTitle>

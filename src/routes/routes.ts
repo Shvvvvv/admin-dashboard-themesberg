@@ -27,5 +27,10 @@ export const ROUTES = {
     name: 'profile',
     path: '/profile',
     relative: 'profile'
+  },
+  PRODUCTS: {
+    name: 'products',
+    path: '/products',
+    relative: 'products'
   }
 } as const

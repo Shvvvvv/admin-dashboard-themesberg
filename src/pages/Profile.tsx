@@ -17,7 +17,7 @@ const Profile = () => {
   return (
     <>
       <div className="grid grid-cols-4 h-full">
-        <div className="col-span-4 lg:col-span-1 p-2">
+        <div className="col-span-4 lg:col-span-1 p-4">
           <img
             src="https://picsum.photos/200/1"
             alt="1"
@@ -64,7 +64,7 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-4 lg:col-span-2 bg-white hidden lg:flex flex-col gap-2 p-2 max-h-full overflow-auto">
+        <div className="col-span-4 lg:col-span-2 bg-white hidden lg:flex flex-col gap-2 p-4 max-h-full overflow-auto">
           <Card className="w-full h-fit">
             <CardContent>
               <div className="flex gap-4 w-full mb-4">
@@ -231,7 +231,7 @@ const Profile = () => {
             </CardFooter>
           </Card>
         </div>
-        <div className="col-span-4 lg:col-span-1 p-2">
+        <div className="col-span-4 lg:col-span-1 p-4">
           <h2 className="font-bold mb-2 mt-4 lg:mt-0">Experience</h2>
           <div className="flex gap-2 items-center border-b py-2">
             <div>
